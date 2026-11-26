@@ -16,3 +16,4 @@ def test_stock_insuficiente_no_intenta_cobrar(mocker):
     pasarela.charge.assert_not_called()
     assert db.orders == {}
     assert db.get_stock("TAZA") == 1
+ 
